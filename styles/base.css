@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400&family=Poppins:wght@200&display=swap');
+
+
+:root {
+    --heading-font: poppins;
+}
+body{
+    font-family:'Bitter', Poppins;
+    font-size: 16px;
+    margin: 20%;
+    padding: 10px;
+    /* zoom: 80%; */
+}
+#profile-image {
+    height: 100px ;
+    width: 100px;
+    margin: 40px;
+
+}
+
+
+header {
+    width: auto;
+    background-color: #084a70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+nav {
+    background-color: black;
+    height: 200px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2
+}
+
+nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+.card {
+    /* margin-top: 0; */
+    border-style: outset;
+    padding-left: 10px;
+    border-radius: 20px;
+    text-align: left;
+    /* border: ; */
+}
+
+.card ul li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.blueband {
+    background-color: #084a70;
+    /* padding-top: -30px; */
+    /* padding-left: -10px; */
+    color: white;
+    text-align: center;
+    /* padding: 0px; */
+
+    /* margin: 20px; */
+}
+
+.blueband h3 {
+    padding: 20px;
+}
+
+
+#info {
+    text-align: center;
+}
+footer {
+    padding: 10px;
+    background-color: #084a70;
+    color: white;
+    padding-left: 10px;
+    height: 150px;
+    text-align: center;
+
+}
+
+#lastModified {
+    color: yellow;
+}
