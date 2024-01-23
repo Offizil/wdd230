@@ -70,13 +70,8 @@ main {
 
 .blueband {
     background-color: #084a70;
-    /* padding-top: -30px; */
-    /* padding-left: -10px; */
     color: white;
     text-align: center;
-    /* padding: 0px; */
-
-    /* margin: 20px; */
 }
 
 .blueband h3 {
@@ -98,5 +93,5 @@ footer {
 }
 
 #lastModified {
-    color: yellow;
+    color: rgba(236, 236, 5, 0.726);
 }
