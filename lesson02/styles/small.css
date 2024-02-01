@@ -1,0 +1,16 @@
+/* small.css */
+
+
+/* Media query for mobile view(small screen) */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    main {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    header, footer, main {
+        width: 100%;
+    }
+   
+  }
