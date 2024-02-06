@@ -36,10 +36,11 @@ header {
 
 nav {
     background-color: black;
-    height: 200px;
-    color: #ffffff;
+    /* height: 200px; */
+    color: #615e5e;
     text-align: center;
-    line-height: 2
+    line-height: 2;
+    
 }
 
 nav a {
@@ -47,7 +48,7 @@ nav a {
     text-decoration: none;
     color: white;
     display: block;
-    margin: 0 auto;
+    /* new rules follow here */
 }
 
 main {
@@ -94,4 +95,103 @@ footer {
 
 #lastModified {
     color: rgba(236, 236, 5, 0.726);
+}
+
+
+
+
+
+/* new code here here here */
+
+@media screen and (min-width: 320px) and (max-width: 639px)
+{
+    /* Mobile View ***************/
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+
+    
+    nav {
+        background-color: tomato;
+        width: 100%;
+        /* display: none; */
+    }
+
+   
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        /* max-width: 760px; */
+    }
+
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 0.75rem; */
+        text-align: center;
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        font-weight: 400;
+        transition: 0.5s;
+        /* font-size: clamp(1rem, 2vmin, 1.5rem); */
+    }
+
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    .mapBox {
+        padding: 10px;
+        /* text-align: center; */
+        width: 100%;
+        margin:  0 auto;
+    }
+
+
+}
+
+        
+
+
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+        /* justify-content: space-around; */
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		justify-content: space-between;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
