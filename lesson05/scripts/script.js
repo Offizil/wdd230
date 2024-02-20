@@ -1,11 +1,14 @@
-const input = document.querySelector("favchap");
+const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
+let error = document.querySelector("#error-msg");
+
 
 
 button.addEventListener("click", () => {
     if (input.value != "")
     {
+        error.textContent = "";   
         const li = document.createElement("li");
         const delBtn = document.createElement("button");
 
@@ -13,7 +16,7 @@ button.addEventListener("click", () => {
         delBtn.textContent = "❌";
 
         li.append(delBtn);
-        list.appendChild();
+        list.appendChild(li);
 
 
         delBtn.addEventListener("click", function(){
@@ -27,7 +30,10 @@ button.addEventListener("click", () => {
 
     }
     else {
-        message.innerHTML = `Please enter a chapter.`;
+        // message.innerHTML = `Please enter a chapter.`;
+        input.focus();
+        error.textContent = "❗❗ You must enter chapter ❗❗";
+
       }
 
 
