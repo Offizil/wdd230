@@ -14,19 +14,53 @@
         padding-top: 10px;
         padding-bottom: 10px;
         color: #ffffff;
-        /* text-align: center; */
-       
-        /* line-height: 2 */
-    }
+      }
 
   
     nav a:hover {
         border: 1px solid white;
     }
- 
 
-    main {
-        display:grid;
-        grid-template-columns: 3fr 1fr;
-    } 
+
+
+
+    
+#mapBox {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin:  0 auto;
+}
+
+    
+    #middlesesh{
+        width: 100%;
+        background-color: #f5f5dc;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 4fr 1fr;
+        gap: 15px;
+    }
+
+    #learning-activities {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    #info{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .card {
+        border-style: outset;
+        /* padding-left: 10px; */
+        border-radius: 10px;
+        /* text-align: left; */
+    }
+    
+
+  
 }

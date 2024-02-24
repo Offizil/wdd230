@@ -7,9 +7,11 @@
 }
 body{
     font-family:'Bitter', Poppins;
-    font-size: 16px;
-    margin: 20%;
+    font-size: 18px;
+    margin: 20px;
     padding: 10px;
+    /* width: 90%; */
+    text-align: center;
     /* zoom: 80%; */
 }
 #profile-image {
@@ -21,7 +23,7 @@ body{
 
 
 header {
-    width: auto;
+    width: 100%;
     background-color: #084a70;
     display: flex;
     align-items: center;
@@ -51,17 +53,55 @@ nav a {
     /* new rules follow here */
 }
 
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+	position: absolute;
+	top: 450px;
+	left: 40px;
+	background: radial-gradient(#ffffff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+
 main {
+    text-align: center;
+    width: 100%; /*change here*/
+    
+}
+
+#middlesesh{
+    width: 100%;
+    background-color: #f5f5dc;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
+}
+
+#learning-activities {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#info{
+    grid-row: 1/2;
+    grid-column: 2/3;
     text-align: center;
 }
 
 .card {
-    /* margin-top: 0; */
     border-style: outset;
-    padding-left: 10px;
-    border-radius: 20px;
-    text-align: left;
-    /* border: ; */
+    /* padding-left: 10px; */
+    border-radius: 10px;
+    /* text-align: left; */
 }
 
 .card ul li {
@@ -80,9 +120,6 @@ main {
 }
 
 
-#info {
-    text-align: center;
-}
 footer {
     padding: 10px;
     background-color: #084a70;
@@ -94,8 +131,17 @@ footer {
 }
 
 #lastModified {
-    color: rgba(236, 236, 5, 0.726);
+    color: #ecec05b9;
 }
+
+#mapbox {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin:  0 auto;
+}
+
 
 
 
@@ -103,11 +149,12 @@ footer {
 
 /* new code here here here */
 
-@media screen and (min-width: 320px) and (max-width: 639px)
+@media screen and (max-width: 700px) /*(min-width: 320px) */
 {
     /* Mobile View ***************/
     #menu {
         display: block;
+        text-align: left;
         font-size: 2rem;
         font-weight:700;
         text-decoration: none;
@@ -163,11 +210,21 @@ footer {
         content: "X";
     }
 
-    .mapBox {
+    #mapbox {
+        display: block;
         padding: 10px;
         /* text-align: center; */
         width: 100%;
         margin:  0 auto;
+    }
+
+    #middlesesh{
+        width: 100%;
+        background-color: #f5f5dc;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
     }
 
 
@@ -194,4 +251,12 @@ footer {
 	#menu {
 		display: none;
 	}
+    #mapbox {
+        display: block;
+        padding: 10px;
+        /* text-align: center; */
+        width: 100%;
+        margin:  0 auto;
+    }
+
 }
