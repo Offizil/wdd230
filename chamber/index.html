@@ -24,7 +24,7 @@
 <body>
     <header>
         <a href="#" id="logo_link">
-        <img id="logo" src="images/logo.png" alt="site-logo" height="30" width="90">
+        <img id="logo" src="images/logo.webp" alt="site-logo" height="30" width="90">
         </a>
         
         <h1 id="chamber_title">Calabar Chamber of Commerce</h1>
@@ -55,17 +55,26 @@
     </header>
     <main>
         <div id="hero_section">        
-            <img id="hero_img" src="images/hero.jpg" alt="hero display image">
-            <button type="button" id="cta_button">Join Us</button>
+            <!-- <img id="hero_img" src="images/hero.jpg" alt="hero display image"> -->
+            <div id="hero_img">
+                <picture>
+                    <source media="(max-width:700px)" srcset="images/small.webp">
+                    <source media="(max-width:999px)" srcset="images/medium.webp">
+                    <source media="(min-width: 1000px)" srcset="images/large.webp">
 
-            <div id="hero_text">
-                <h3 id="hero_h4">Lorem ipsum dolor sit, amet consectetur adipisicing<br> elit. Nisi cumque fuga accusamus reprehenderit<br> alias dolorum possimus voluptas non quidem perspiciatis,<br> fugit quos at repudiandae ipsa, modi corporis quo error itaque!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione exercitationem voluptatibus</p>
-            
+                    <img src="images/large.webp" alt="hero display image" width="1300" height="866">
+                </picture>
             </div>
+                <button type="button" id="cta_button">Join Us</button>
+
+                <div id="hero_text">
+                    <h3 id="hero_h4">Lorem ipsum dolor sit, amet consectetur adipisicing<br> elit. Nisi cumque fuga accusamus reprehenderit<br> alias dolorum possimus voluptas non quidem perspiciatis,<br> fugit quos at repudiandae ipsa, modi corporis quo error itaque!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione exercitationem voluptatibus</p>
+                </div>
+            
         </div>
 
-        <div></div>
+        
        
         
 
@@ -97,16 +106,29 @@
                 <article class="forecast">
                     <h2>Weather forecast for Calabar</h2>
                     <article class="day-forecast">
-                    <h2>03 March 2024</h2>
-                    <p>Rain.</p>
+                    <h2>Today</h2>
+                    <p>Rainy</p><br>
+                    <!-- <p id="temp">Temperature: <span>45</span></p>
+                    <p id="vel">Wind Speed: <span>4</span> mph</p> -->
+                    <form>    
+                    <label for="temp">Temperature</label><br>
+                    <input type="text" id="temp" placeholder="Enter current temperature"><br>
+                    <label for="vel">Wind Velocity</label><br>
+                    <input type="text" id="vel" placeholder="Enter current wind velocity"><br><br>
+                    <input type="button" value="Calculate Windchill" id="submitBttn">
+                    </form><br>
+                    <p id="windchill"></p>
                     </article>
                     <article class="day-forecast">
                     <h2>04 March 2024</h2>
                     <p>Periods of rain.</p>
+                    <p class="windchill"></p>
                     </article>
                     <article class="day-forecast">
                     <h2>05 March 2024</h2>
                     <p>Heavy rain.</p>
+                    <p class="windchill"></p>
+                    
                     </article>
                 </article>
             </div>
@@ -119,6 +141,7 @@
     </footer>
     <script src="scripts/menuscripts.js"></script>
     <script src="scripts/getdates.js"></script> 
+    <script src="scripts/windchill.js"></script>
 
     
 </body>
