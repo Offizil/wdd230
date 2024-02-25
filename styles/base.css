@@ -60,13 +60,13 @@ nav a {
 
 .herolabel {
 	position: absolute;
-	top: 450px;
-	left: 40px;
-	background: radial-gradient(#ffffff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
+	top: 450px; 
+	left: 40px; 
+	background: radial-gradient(#ffffff, #4D5B97); 
+	border: 1px solid #000000bf; 
+	padding: 1.5rem; 
+	box-shadow: 0 0 3rem #fff; 
+	opacity: 0.75; 
 	/* Buenas */
 }
 
@@ -134,13 +134,15 @@ footer {
     color: #ecec05b9;
 }
 
+
 #mapbox {
-    display: block;
+    display: inline-block;
     padding: 10px;
     text-align: center;
     width: 100%;
+    height: auto;
     margin:  0 auto;
-}
+} 
 
 
 
@@ -213,7 +215,7 @@ footer {
     #mapbox {
         display: block;
         padding: 10px;
-        /* text-align: center; */
+        text-align: center;
         width: 100%;
         margin:  0 auto;
     }
@@ -251,12 +253,13 @@ footer {
 	#menu {
 		display: none;
 	}
+    
     #mapbox {
         display: block;
         padding: 10px;
-        /* text-align: center; */
+        text-align: center;
         width: 100%;
         margin:  0 auto;
-    }
+    } 
 
 }
