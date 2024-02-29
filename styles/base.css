@@ -33,6 +33,12 @@ header {
     align-content: center;
 }
 
+#label {
+    font-weight: 700;
+}
+#visit-counter {
+    font-weight: bold;
+}
 
 
 nav {
