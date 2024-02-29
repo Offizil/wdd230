@@ -1,0 +1,44 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-image {
+    animation: fadeIn 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+
+img {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: #084a70;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    /* font-size: 20px; */
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #084a70;
+    color: white;
+    padding-left: 10px;
+    height: 150px;
+    text-align: center;
+
+}

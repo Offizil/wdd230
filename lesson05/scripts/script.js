@@ -4,6 +4,7 @@ const list = document.querySelector("#list");
 let error = document.querySelector("#error-msg");
 
 
+input.focus();
 
 button.addEventListener("click", () => {
     if (input.value != "")
@@ -17,6 +18,9 @@ button.addEventListener("click", () => {
 
         li.append(delBtn);
         list.appendChild(li);
+        input.focus();
+        input.value="";
+
 
 
         delBtn.addEventListener("click", function(){
