@@ -456,6 +456,15 @@ nav a:hover, nav a:active {
 	border-color: #eee; 
   box-shadow: none;
 }
+
+/* DISCOVER PAGE CSS */
+/* DISCOVER PAGE CSS */
+/* DISCOVER PAGE CSS */
+/* DISCOVER PAGE CSS */
+/* DISCOVER PAGE CSS */
+/* /* DISCOVER PAGE */
+
+
 }
 
 
@@ -537,7 +546,6 @@ nav a:hover, nav a:active {
   /* width: 900px; */
   grid-area: 1/2/3/3;
   color: #502f2f;
-
   /* height: fit-content; */
   display: block;
 }
@@ -564,7 +572,30 @@ span {
 }
 
 
-
+@media screen and (max-width: 620px) {
+  #discover-main {
+    /* margin: 10px; */
+    display: block;
+    background-color: beige;
+  
+  }
+  
+    #sidebar-area {
+      /* padding-top: 40px; */
+      width: 100%;
+      /* height: fit-content; */
+      border-right: 2px solid var(--nav-hover-background-color);
+      display: block;
+    }
+  
+    #main-area {
+      /* width: 900px; */
+      color: #502f2f;
+      /* height: fit-content; */
+      display: block;
+    }
+  
+}
 
 
 
