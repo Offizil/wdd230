@@ -1,0 +1,82 @@
+:root {
+    --gradient: #084a70;
+    --primary-color:  #084a70;
+    --secnd-color: beige;
+    --valid: #4c5cd6;
+    --invalid: #8f0909;
+}
+
+:root {
+    --heading-font: poppins;
+}
+
+
+main{
+    margin-top: 40px;
+}
+.myForm label {
+    display: block;
+    padding-top: 2rem;
+    color: #541102;
+    font-size: .9rem;
+    text-align: left;
+    /* margin-top: ; */
+    margin-left: 10px;
+    font-weight: bold;
+    /* padding-bottom:  */
+
+    
+}
+
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="range"],
+.myForm input[type="password"],
+.myForm select{
+    background-color: var(--secnd-color);
+    display: block;
+    border: solid 1px #999;
+    color: #555;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.myForm input[type="submit"] {
+    padding: 15px;
+    margin-left: 10px;
+   background-color: var(--primary-color);
+    color: beige;
+   border-radius: 6px;
+   border: none;
+   width: 100%;
+   max-width: 420px;
+   display: block;
+   margin-top: 2%;
+   margin-bottom: 80px;
+   /* align-content: start; */
+}
+
+.myForm input:required {
+    border-bottom: solid 4px var(--invalid);
+}
+
+.myForm input:required:valid {
+    border-bottom: solid 4px var(--valid);
+}
+
+.myForm span {
+    color: var(--invalid);
+}
+
+#confam-msg {
+    text-align: center;
+    /* display: block; */
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 20%;
+    /* width: 100%; */
+}
