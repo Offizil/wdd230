@@ -37,29 +37,32 @@
         
     </nav>
     
-    <main>
+    <main id="form-main">
         <div id="formmessage"></div>
-        <form action="record.html" method="get" class="myForm" target="_blank" >
-            <label>Username<span>*</span> <input type="text" id="username" name="username" required></label>
+        <div id="form-container">
+            <form action="record.html" method="get" class="myForm" target="_blank" >
+                <label>Username<span>*</span> <input type="text" id="username" name="username" required></label>
+                
+                <label>Password<span>*</span> <input type="password" name="pword" id="pword" pattern="[A-Za-z0-9]{8,}" placeholder="At least 8 characters. strictly alpha-numeric" title="password must be at least eight (8) characters long and can only be alpha-numeric" required></label>
+                
+                <label>Confirm password<span>*</span><input type="password" name="pword2" id="pword2" pattern="[A-Za-z0-9]{8,}" title="must match previously provided password" required></label>
+                
+                <label>Email<span>*</span> <input type="email" id="email" name="email" placeholder="person@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="please enter a valid email address(person@byui.edu)" required></label>
+                
+                <label>Page Rating <input type="range" id="page-rating" name="page-rating"  min="0" max="5" value="0" step="1" list="rangevalues" > </label>
             
-            <label>Password<span>*</span> <input type="password" name="pword" id="pword" pattern="[A-Za-z0-9]{8,}" required></label>
-            
-            <label>Confirm password<span>*</span><input type="password" name="pword" id="pword2" pattern="[A-Za-z0-9]{8,}" title="password must be at least eight (8) characters long and can only be alpha-numeric" required></label>
-            
-            <label>Email<span>*</span> <input type="email" id="email" name="email" title="please enter a valid email address" required></label>
-            
-            <label>Page Rating <input type="range" id="page-rating" name="page-rating"  min="0" max="5" value="0" step="1" list="rangevalues"> </label>
-            <datalist id="rangevalues">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </datalist>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
 
-            <input type="submit" value="Proceed">
-        </form>
+                <input type="submit" value="Proceed">
+            </form>
+        </div>
 
 
 
@@ -89,5 +92,6 @@
     <script src="scripts/menuscripts.js"></script>
    <script src="scripts/getdates.js"></script> 
    <script src="scripts/localstorage.js"></script>
+   <script src="scripts/passwordcheck.js"></script>
 </body>
 </html>
