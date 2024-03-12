@@ -574,9 +574,196 @@ span {
       /* height: fit-content; */
       display: block;
     }
-  
+
+     
 }
 
 
 
 
+
+
+
+
+
+/* -------JOIN PAGE FORM STYLING----------- */
+
+
+
+.joinForm{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.joinForm label {
+  display: block;
+  padding-top: 1.5rem;
+  padding-left: 1%;
+  color: #000210;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.joinForm div {
+  padding-top:  2rem;
+  color: var(--primary-color);
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.joinForm textarea,
+.joinForm input[type="text"],
+.joinForm input[type="tel"],
+.joinForm input[type="email"],
+.joinForm select {
+  background-color: beige;
+  display: block;
+  border: solid 1px #999;
+  color: #555;
+  border-radius: 6px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.joinForm input[type="radio"],
+.joinForm input[type="checkbox"]{
+  margin-right: 6px;
+}
+
+.joinForm input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(var(--primary-color), var(--paragraph-background-color));
+  padding: .9rem;
+  width: 96%;
+  color: white;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px ;
+  margin-top: 40px;
+  display: block;
+}
+
+#form-area h3 {
+  display: block;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+
+#benefit-area h3 {
+  color: var(--primary-color);
+}
+
+#benefit-area p {
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+
+.joinForm input:required {
+
+/* border-left: solid 4px #8b4747;  */
+border-bottom: solid 4px #8b4747 ;
+}
+
+.joinForm input:required:valid {
+  /* border-left: solid 4px var(--primary-color); */
+  border-bottom: solid 4px var(--primary-color)
+}
+
+#form-area span {
+  color: red;
+  text-decoration: none;
+}
+
+
+
+
+#join-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#benefit-area {
+  grid-column: 2/3;
+  margin-top: 40px;
+  font-size: .9rem;
+ 
+}
+
+#form-area {
+  grid-column: 1/2;
+  text-align: center;
+  }
+
+.membership {
+  border: 1px solid var(--accent3-color);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.membership ul li {
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 620px) {
+  
+  /* -------FORM STYLING----------- */
+
+  #join-main {
+    display:block;
+    }
+
+
+    #benefit-area {
+      display: block;
+    margin-top: 40px;
+    font-size: .9rem;
+ 
+    }
+
+  #form-area {
+     display: block;
+    text-align: center;
+     }
+
+
+  .dark-mode {
+  background-color: #292828;
+  color: #fff;
+  border-color: #eee; 
+  
+}
+
+  .dark-mode label {
+    color:white;
+  }
+
+  
+}
+
+
+/* ----------Thank you page --------- */
+.welcome-message {
+  margin: 20%;
+
+}
+
+.welcome-message h1 {
+  color: var(--primary-color);
+
+}
+
+.welcome-message a {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: 900;
+}

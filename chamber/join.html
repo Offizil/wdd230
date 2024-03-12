@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calabar Chamber of Commerce</title>
+    <meta name="description" content="This is the home page for the chamber of commerce in course project for web front end development WDD230. modiifications of HTML and CSS will be made weekly as per requirements. This fulfils requirement for a certificate in Web and Computer Programming(C129) at BYU-Idaho ">
+    <meta name="author" content="Edem Offiong">
+    <link rel="icon" href="images/favicon(3).ico">
+
+    <meta property="og:title" content="Edem Offiong -Calabar Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Offizil.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnigeriapropertycentre.com%2Farea-guides%2Fcross-river%2Fcalabar&psig=AOvVaw3VtajwXc2czP2-iW5hanq1&ust=1705882713256000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCODXp7-a7YMDFQAAAAAdAAAAABAD"> 
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+</head>
+<body>
+    <header>
+        <a href="#" id="logo_link">
+        <img id="logo" src="images/logo.webp" alt="site-logo" height="30" width="90">
+        </a>
+        
+        <h1 id="chamber_title">Calabar Chamber of Commerce</h1>
+
+
+        <a id="menu" href="#"></a>
+        <nav>
+            <a class="navlinks" href="chamber/">Home</a>
+            <a class="navlinks" href="#">Business Resources</a>
+            <a class="navlinks" href="#">Events & Programs</a>
+            <a class="navlinks" href="#">Advocacy</a>
+            <a class="navlinks" href="#">Archives</a>
+            <button type="button"  id="login_button">Login</button>
+
+            
+
+        </nav>
+
+        <div id="mode">
+            🔆🌒
+            <!-- <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label> -->
+              <!-- ⚫🟢 🕶️ -->
+        </div>
+
+    </header>
+    <main id="join-main">
+        <div id="form-area">
+
+            <h3>Please fill out the following relevant information</h3>
+
+            <form class="joinForm" action="thankyou.html" method="get">
+                <label>First Name<span>*</span> <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name<span>*</span> <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position<span>*</span> <input type="text" name="title" id="position" pattern="[a-zA-Z\- ]{7,}" required></label>
+                <label>Email<span>*</span> <input type="email" name="email" id="email" placeholder="person@gmail.com" required></label>
+                <label>Mobile Phone Number<span>*</span> <input type="tel" name="phone" id="phone" required></label>
+                <label>Business Name<span>*</span> <input type="text" name="business" id="business" required></label>
+                
+                <div>Membership level</div>
+                <label><input type="radio" name="level" value="np">Non-Profit Membership</label>
+                <label><input type="radio" name="level" value="bronze" >Bronze Membership</label>
+                <label><input type="radio" name="level" value="silver">Silver Membership</label>
+                <label><input type="radio" name="level" value="gold">Gold Membership</label>    
+                     
+                <label>Business description
+                <textarea id="bis-desc" name="bis-desc" rows="6" cols="50" placeholder="Enter brief business description here... "></textarea>
+                </label>
+                
+                <div>
+                    <input type="hidden" name="getdate" id="getdate">
+                </div>
+
+                <input type="submit" id="submit-button" value="Join the Chamber">
+            
+            </label>
+
+                  
+
+
+            </form>
+        </div>
+
+        <div id="benefit-area">
+
+            <div id="non-Profit" class="membership">
+                <h3>Non-Profit Membership</h3>
+                <h4>Cost: N15,000 per year</h4>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Inclusion in Chamber publications as a non-profit supporter.</li>
+                    <li>Access to networking events and business mixers.</li>
+                    <li>Listing in the online Chamber directory.</li>
+                    <li>Participation in community outreach programs.</li>
+                    <li>Opportunity to promote non-profit events through Chamber channels.</li>
+                </ul>
+                <br>
+                
+
+            </div>
+
+            <div id="bronze" class="membership">
+                <h3>Bronze Membership</h3>
+                <h4>Cost: N30,000 per year</h4>
+                <p>Benefits:</p>
+                <ul>
+                    <li>All Non-Profit Membership benefits.</li>
+                    <li>Priority access to Chamber-sponsored training and workshops. </li>
+                    <li>Exclusive discounts on Chamber events and seminars.</li>
+                    <li>Recognition as a Bronze Member in Chamber communications.</li>
+                    <li>10% discount on advertising services, including spotlights on the Chamber's home page.</li>
+                </ul>
+                <br>
+                
+
+            </div>
+
+
+            <div id="silver" class="membership">
+                <h3>Silver Membership</h3>
+                <h4>Cost: N52,000 per year</h4>
+                <p>Benefits:</p>
+                <ul>
+                    <li>All Bronze Membership benefits.</li>
+                    <li>Featured spotlight position on the Chamber's home page.</li>
+                    <li>Enhanced visibility in Chamber publications.</li>
+                    <li>Complimentary access to select premium Chamber events.</li>
+                    <li>15% discount on advertising services, including featured spots on the Chamber's website.</li>
+                </ul>
+                <br>
+                
+
+            </div>
+
+
+            <div id="gold" class="membership">
+                <h3>Gold Membership</h3>
+                <h4>Cost: N85,000 per year</h4>
+                <p>Benefits:</p>
+                <ul>
+                    <li>All Silver Membership benefits.</li>
+                    <li>VIP access to exclusive Chamber events and forums. </li>
+                    <li>Prominent logo placement in Chamber materials and publications.</li>
+                    <li>Customized promotional opportunities tailored to your business.</li>
+                    <li>20% discount on advertising services, including premium spots on the Chamber's home page.</li>
+                </ul>
+                <br>
+                
+
+            </div>
+
+        </div>
+        
+        
+       
+        
+
+        
+    </main>
+    <footer>
+        <h3>Calabar Chamber of Commerce</h3>
+        <p>&copy;2024<br>Edem Offiong<br>Nigeria</p>
+        <p id="lastModified">incoming js code</p>
+    </footer>
+    <script src="scripts/menuscripts.js"></script>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/validate.js"></script>
+
+    
+</body>
+</html>
