@@ -1,18 +1,61 @@
-{
-"name":"Company1",
-"address": "08104292939",
-"phoneNumbers":"numbers",
-"websiteURLs" :  "urls",
+{ 
+    "chamberMembers": [ { 
+"name":"Pacific computers`",
+"address": "101 Ndidem Usang Iso road",
+"phoneNumbers":"234 59202202",
+"websiteURLs" :  "Pacificcomputers.com",
 "image": "icons file names",
-"membershipLevel": "membershipLevel"
+"membershipLevel": "Bronze"
+   },
+   {
+    "name":"Gladdems digital prints",
+"address": "99 Marian road, Calabar",
+"phoneNumbers":"234 909 8388382",
+"websiteURLs" :  "gladems.com.ng",
+"image": "icons file names",
+"membershipLevel": "Silver"
+  
+   },
+   {
+    "name":"Chicken Republic",
+"address": "88 Etta Agbor street, Calabar",
+"phoneNumbers":"234 909 8373382",
+"websiteURLs" :  "CrepUnitedstores.org",
+"image": "icons file names",
+"membershipLevel": "Gold"
+   },
 
-
-
-
-
-
-
-
-
-
+   {
+    "name":"T-tee designs",
+    "address": "Moore road, Calabar south",
+    "phoneNumbers":"234 803 393388382",
+    "websiteURLs" :  "tteedesigns.com.ng",
+    "image": "icons file names",
+    "membershipLevel": "Bronze"
+   },
+   {
+    "name":"Gabbies Native Delight",
+    "address": "101 IBB Way, Calabar",
+    "phoneNumbers":"234 909 9878382",
+    "websiteURLs" :  "gabbitonsdelight.com.ng",
+    "image": "icons file names",
+    "membershipLevel": "Silver"
+   },
+   {
+    "name":"Crunchies PlusC",
+    "address": "111 Mary slessor Road Calabar",
+    "phoneNumbers":"234 810 44398382",
+    "websiteURLs" :  "cruunchies.com.ng",
+    "image": "icons file names",
+    "membershipLevel": "Gold"
+   },
+   {
+    "name":"Ekanem and Sons",
+    "address": "121 Mekenge layout, Calabar",
+    "phoneNumbers":"234 802 921213982",
+    "websiteURLs" :  "ekanemoffiong.org",
+    "image": "icons file names",
+    "membershipLevel": "Non-Profit"
+   }
+]
 }
