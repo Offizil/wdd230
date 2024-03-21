@@ -31,7 +31,7 @@ const displaychamberMembers = (members) => {
     h2.textContent = `${member.name}`;
 
     p1.innerHTML =  member.address + "<br>Cross River State, Nigeria<br>" + member.phone;
-    p2.textContent = member.membershipLevel;
+    p2.textContent = ` ${member.membershipLevel} membership`;
     a.textContent = member.websiteURLs;
     a.setAttribute("href", member.websiteURLs);
 
