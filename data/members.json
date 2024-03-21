@@ -4,7 +4,7 @@
 "address": "101 Ndidem Usang Iso road, Calabr",
 "phone":"234 59202202",
 "websiteURLs" :  "Pacificcomputers.com",
-"imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(1).jpg",
+"imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(1).jpg", 
 "membershipLevel": "Bronze"
    },
 
@@ -32,7 +32,7 @@
 "address": "88 Etta Agbor street, Calabar",
 "phone":"234 909 8373382",
 "websiteURLs" :  "CrepUnitedstores.org",
-"imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(2).jpg",
+"imageURL": "images/logo(2).jpg",
 "membershipLevel": "Gold"
    },
 
