@@ -761,9 +761,118 @@ border-bottom: solid 4px #8b4747 ;
   color: var(--primary-color);
 
 }
-
+ 
 .welcome-message a {
   text-decoration: none;
   color: var(--accent1-color);
   font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------DIRECTORY PAGE CSSS HERE---------- */
+#grid, #list {
+  position: relative;
+  right: 9px;
+  border: .5px solid gold;
+  border-radius: 6px;
+  /* top: 10px; */
+  background-color: beige;
+  margin-bottom: 10px;
+  
+}
+
+#grid:hover, #list:hover{
+  background-color: #8b4747;
+}
+
+
+
+.gridview {
+  width: 100%;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.gridview section{
+  margin: 5px;
+  padding: 2.5rem 1.5rem;
+  border-radius: 10px;
+  border: #7c2828 3px solid;
+  color: #151a24;
+}
+
+.gridview section img{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gridview section p,
+.gridview section a {
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+.toggleButtons{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+/* listview */
+
+.listview{
+  display: inline;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  vertical-align: top;
+
+
+}
+
+
+.listview section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  color: #14213D;
+  margin: 0 .7rem;
+  font-weight: bold;
+  font-size: 13px;
+  align-items: center;
+}
+
+.listview section:nth-last-of-type(even) {
+  background-color: beige;
+}
+
+.listview section p {
+  padding: 3px;
+  font-size: medium;
+}
+
+.listview section h2{
+  color: #7c2828;
+}
+.listview section:last-child {
+  margin-bottom: 3rem;
 }

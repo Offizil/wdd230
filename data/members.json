@@ -1,12 +1,22 @@
 { 
     "chamberMembers": [ { 
-"name":"Pacific computers`",
-"address": "101 Ndidem Usang Iso road",
+"name":"Pacific computers",
+"address": "101 Ndidem Usang Iso road, Calabr",
 "phone":"234 59202202",
 "websiteURLs" :  "Pacificcomputers.com",
 "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(1).jpg",
 "membershipLevel": "Bronze"
    },
+
+   {
+    "name":"Cakery9ja Bakeries",
+    "address": "121 Baracks road, Calabar",
+    "phone":"234 802 92231112",
+    "websiteURLs" :  "cakery9ja.org",
+    "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(5).jpg",
+    "membershipLevel": "Gold"
+   },
+
    {
     "name":"Gladdems digital prints",
 "address": "99 Marian road, Calabar",
@@ -16,6 +26,7 @@
 "membershipLevel": "Silver"
   
    },
+
    {
     "name":"Chicken Republic",
 "address": "88 Etta Agbor street, Calabar",
@@ -33,6 +44,7 @@
     "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(2).png",
     "membershipLevel": "Bronze"
    },
+
    {
     "name":"Gabbies Native Delight",
     "address": "101 IBB Way, Calabar",
@@ -41,14 +53,16 @@
     "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(3).jpg",
     "membershipLevel": "Silver"
    },
+
    {
-    "name":"Crunchies PlusC",
+    "name":"Crunchies Plus",
     "address": "111 Mary slessor Road Calabar",
     "phone":"234 810 44398382",
     "websiteURLs" :  "cruunchies.com.ng",
     "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(4).jpg",
     "membershipLevel": "Gold"
    },
+
    {
     "name":"Ekanem and Sons",
     "address": "121 Mekenge layout, Calabar",
@@ -56,6 +70,16 @@
     "websiteURLs" :  "ekanemoffiong.org",
     "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(5).jpg",
     "membershipLevel": "Non-Profit"
+   },
+   {
+    "name":"Vincitore Dental Clinic",
+    "address": "121 Ibom layout, Calabar",
+    "phone":"234 802 921213982",
+    "websiteURLs" :  "vincitoredental.com",
+    "imageURL": "https://offizil.github.io/wdd230/chamber/images/logo(4).jpg",
+    "membershipLevel": "Gold"
    }
+
+
 ]
 }

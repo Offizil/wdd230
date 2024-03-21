@@ -28,7 +28,10 @@ async function getLinksData() {
 
         const weekNo = week.lesson;
 
-        container.appendChild(a);
+
+
+        const weekly = `Week ${data.lessons}: ${a} `
+        container.appendChild(weekly);
 
         container.appendChild(document.createElement('br'));
 
@@ -44,7 +47,7 @@ async function getLinksData() {
 
 
 
-        `Week ${data.lessons}: `
+        
         
     });
  }
