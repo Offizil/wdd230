@@ -1,7 +1,7 @@
 //  ---------SCRIPT FOR WEATHER FUNCTION-----------
 const apiKey = "e8a706196182a36f8689bfcb03e2425f";
 const city = "owo";
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 const currentTemp = document.querySelector('#tempValue');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
