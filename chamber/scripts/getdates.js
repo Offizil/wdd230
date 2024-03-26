@@ -59,6 +59,8 @@
     }
 });
 
-const Hiddenfiled = document.querySelector("#getdate");
 
-Hiddenfiled.textContent = `${formattedDate} at ${formattedTime}`;
+
+const hiddenfield = document.querySelector("#getdate");
+
+hiddenfield.innerHTML = `${formattedDate} at ${formattedTime}`;

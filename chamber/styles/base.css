@@ -121,6 +121,8 @@ nav a {
 }
 
 #hero_text{
+  margin-left: 10px;
+  font-size: xx-large;
   color: beige;
   grid-area: 2/1/5/3;
   margin: 10px;
@@ -129,12 +131,14 @@ nav a {
 }
 
 #hero_h4 {
-  font-size: 32px;
+  font-size: 40px;
+  box-shadow: #000;
   
 }
 
 #hero_text p {
-  font-size: 22px;
+  font-size: 32px;
+  box-shadow: #000210;
 }
 
 
@@ -160,10 +164,7 @@ nav a {
   padding-top: 20px;
 }
 
-#current_events, h2, div  {
 
-  margin: 2px 20px;
-} 
 
 
 #spotlights_adverts {
@@ -913,3 +914,33 @@ border-bottom: solid 4px #8b4747 ;
   margin-top: 1rem;
   cursor: pointer;
 }
+
+
+/* ---styles for current events seection=-------- */
+#current_events {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+  text-align: center; /* Centers text content horizontally */
+  padding: 20px;
+}
+#event {
+  text-align: left !important;
+}
+#current_events h3 {
+  text-align: center;
+}
+
+#current_events p {
+  font-size: larger;
+}
+
+#current_events img {
+  max-width: 100%; /* Ensures images don't exceed their container's width */
+  height: auto; 
+}
+
+#current_events > div {
+  margin-bottom: 20px; /* Adds space between each event */
+}
+

@@ -2,26 +2,12 @@
 const apiKey = "e8a706196182a36f8689bfcb03e2425f";
 const city = "calabar";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
-// const apiURL2 = `https://api.openweathermap.org/geo/1.0/direct?q=${city},540001,+234&limit=1&appid=${apiKey}`;
-// const apiURL2 = `http://api.openweathermap.org/geo/1.0/reverse?lat=7.199247&lon=5.593436&limit=1&units=imperial&appid=${apiKey}`;
 const apiURL2 = `http://api.openweathermap.org/data/2.5/forecast?id=2346229&appid=${apiKey}`;
 const currentTemp = document.querySelector('#tempValue');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const weatherForecast = "";
 
-// const forecastSection = document.querySelector("#day-forecast");
-// const forecastDays = document.createElement("h3");
-// const forecastTemp = document.createElement("p");
-// const forecastDesc = document.createElement("p");
-// const iconImage = document.createElement("img");
-
-
-
-// forecastSection.appendChild(forecastDays);
-// forecastSection.appendChild(forecastTemp);
-// forecastSection.appendChild(iconImage);
-// forecastSection.appendChild(forecastDesc);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch API and display
@@ -80,9 +66,7 @@ function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
 }
 
 function processForecastData(forecastData) {
-  console.log(forecastData); // Log the forecastData object to inspect its structure
-  console.log(forecastData.list); // Log the 'list' property to see its contents
-  
+ 
   // // Check if forecastData is an array and has at least one element
   if (!Array.isArray(forecastData.list) || forecastData.list.length === 0) {
     console.error('Invalid forecast data ooh');
