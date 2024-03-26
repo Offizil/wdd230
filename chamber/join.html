@@ -32,9 +32,9 @@
 
         <a id="menu" href="#"></a>
         <nav>
-            <a class="navlinks" href="chamber/index.html">Home</a>
-            <a class="navlinks" href="chamber/directory.html">Directory</a>
-            <a class="navlinks" href="chamber/discover.html">Discover</a>
+            <a class="navlinks" href="index.html">Home</a>
+            <a class="navlinks" href="directory.html">Directory</a>
+            <a class="navlinks" href="discover.html">Discover</a>
             <a class="navlinks" href="#">Advocacy</a>
             <a class="navlinks" href="#">Archives</a>
             <a href="join.html"><button type="button"  id="login_button">Login</button></a>
@@ -66,11 +66,13 @@
                 <label>Mobile Phone Number<span>*</span> <input type="tel" name="phone" id="phone" required></label>
                 <label>Business Name<span>*</span> <input type="text" name="business" id="business" required></label>
                 
-                <div>Membership level</div>
+                <fieldset>
+                <legend>Membership level</legend>
                 <label><input type="radio" name="level" value="np">Non-Profit Membership</label>
                 <label><input type="radio" name="level" value="bronze" >Bronze Membership</label>
                 <label><input type="radio" name="level" value="silver">Silver Membership</label>
-                <label><input type="radio" name="level" value="gold">Gold Membership</label>    
+                <label><input type="radio" name="level" value="gold">Gold Membership</label>
+                </fieldset>    
                      
                 <label>Business description
                 <textarea id="bis-desc" name="bis-desc" rows="6" cols="50" placeholder="Enter brief business description here... "></textarea>
