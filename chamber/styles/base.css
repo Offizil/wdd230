@@ -117,7 +117,7 @@ nav a {
   width: 200px;
   height: 60px;
   margin-left: 20px;
-  box-shadow: 0 0 10px 2px red;
+  /* background-image: linear-gradient(var(--accent1-color), white, var(--paragraph-color-on-white) )  ; */
 
 }
 
@@ -365,12 +365,10 @@ nav a:hover, nav a:active {
 
 #cta_button {
   z-index: 3;
-  /* grid-area: 5/5/6/7; */
   grid-area: 3/1/4/2;
-
-  /* width: 100px; */
+  background-image: linear-gradient( var(--accent1-color), white, var(--paragraph-color-on-white) )  ;
+  ;
   height: 40px;
-  /* margin-left: 10px; */
 }
 
 #hero_text{
@@ -940,7 +938,7 @@ border-bottom: solid 4px #8b4747 ;
 
 
 .newsStyle {
-  padding: 10px;
+  padding: 20px;
   border-radius: 6px;
   background-color:var(--primary-color);
   margin-bottom: 40px;
