@@ -78,21 +78,21 @@
         
        
         
-
+            <!-- ---EVENTS SECTION---- -->
         <div id="content">
-            <section id="current_events">
-                <h2 id="event">Events</h2><hr>
+            <section id="current_events" class="eventss">
+                <h2 id="event">Events</h2>
                 <div>
                     <img src="images/csr.jpg" alt="crs image" id="csr-img">
                     <h3><b>2024 Corporate Social Responsibility(CSR)</b></h3>
                     <p>Donate to the ongoing Odukpani LGA 'Accident and emergency complex' building project as part of our yearly corporate social responsibility.<br>Earn membrship bonus points upon successful donation</p>
-                </div><hr>
+                </div>
                 <div>
                     <img id="sme-img" src="images/sme.jpg">
                     <h3>Investors domain</h3>
                     <p>Investing in a small business is a way of life in our chamber. Invest in a small business today and reap extra membership benefits.</p>
                     <p>Register now to participate</p>
-                </div><hr>
+                </div>
                 <div>
                     <img src="images/pinkafrica.jpg" alt="pink africa hd logo" id="pink-img">
                 <h4>PINK AFRIKA Cancer Walk</h4>
@@ -100,15 +100,24 @@
                  </div>
 
             </section>
+
+            <!-- ----SPOTLIGHT MEMBERS SECTION---- -->
             <section id="spotlights_adverts">
+                <div id="newssection">
+                <h2>Chamber News</h2>
+                </div>
+                
                 <h2>2023 Top Chamber Members</h2>
 
 
                 </section>
 
+
+
+                <!-- ----WEATHER SECTION=------ -->
             <div id="weather_section">
                 <article class="forecast">
-                    <h2>Weather forecast for Calabar</h2>
+                    <h2>Calabar Weather Today</h2>
                     <article class="day-forecast">
 
                     <h2>Today</h2>
@@ -119,20 +128,17 @@
                     </figure><hr>
 
                     <h3>Windchill</h3>
-                    <form>    
-                    <label for="temp">Temperature</label><br>
-                    <input type="text" id="temp" placeholder="Enter current temperature"><br>
+                    <p id="tempP"></p>
+                    <p id="velP"></p>
+                    <p id="windchill"></p>
+                    <p id="courtesy">Courtesy of: OpenWeatherMap.org</p><hr>
 
-                    <label for="vel">Wind Velocity</label><br>
-                    <input type="text" id="vel" placeholder="Enter current wind velocity"><br><br>
-
-                    <input type="button" value="Calculate Windchill" id="submitBttn">
-                    </form><br>
-                    <p id="windchill"></p><hr>
                     </article>
                     
                 </article>
-                <section id="day-forecast"></section>
+                <section id="day-forecast">
+                    <h2>3-day Forecast for calabar</h2><br>
+                </section>
                 <section class="eventbanner" id="eventbanner">
                     <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
                     <button class="close-btn" onclick="closeBanner()">Close</button>

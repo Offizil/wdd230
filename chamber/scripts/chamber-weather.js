@@ -49,6 +49,7 @@ async function callFetch(apiURL) {
 
 function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
   // Get the temperature in Fahrenheit without decimals
+  // console.log(weatherData)
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   currentTemp.style.textDecoration = "none";
 
@@ -66,7 +67,7 @@ function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
 }
 
 function processForecastData(forecastData) {
- 
+//  console.log(forecastData)
   // // Check if forecastData is an array and has at least one element
   if (!Array.isArray(forecastData.list) || forecastData.list.length === 0) {
     console.error('Invalid forecast data ooh');
