@@ -111,12 +111,13 @@ nav a {
   grid-area: 5/1/6/3;
   font-size: 22px;
   font-weight: bold;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5%;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: none;
+  border-radius: 10px;
   width: 200px;
   height: 60px;
   margin-left: 20px;
-  box-shadow: 0 0 10px 2px rgb(25, 144, 173);
+  box-shadow: 0 0 10px 2px red;
 
 }
 
@@ -296,18 +297,21 @@ hr {
 }
 #menu::before {
   content: "≡";
+  color: var(--accent1-color);
+  font-weight: bolder
+  ;
 }
 
 
 #menu.show::before {
   content:"≡"; /*"X"*/
+  color: #000;
+  
 }
 
 nav.show {
   display: block;
-
-  /* background-color: #EDD83D; */
-   /* or any suitable display value for your design */
+    /* background-color: #EDD83D; */
 }
 
 nav a, #login_button {
@@ -364,9 +368,9 @@ nav a:hover, nav a:active {
   /* grid-area: 5/5/6/7; */
   grid-area: 3/1/4/2;
 
-  width: 100px;
+  /* width: 100px; */
   height: 40px;
-  margin-left: 20px;
+  /* margin-left: 10px; */
 }
 
 #hero_text{
@@ -379,16 +383,16 @@ nav a:hover, nav a:active {
 }
 
 #hero_h4 {
-  font-size: 32px;
+  /* font-size: 32px; */
   
 }
+ 
 
+#hero_text h2, 
 #hero_text p {
-  font-size: 22px;
+  text-shadow: 2px 2px 15px black;
+
 }
-
-
-
 
 
 
