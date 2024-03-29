@@ -1,0 +1,8 @@
+#map {
+    width: 600px;
+    height: 600px;
+  }
+
+* {
+    background-color: rgb(165, 184, 184);
+}

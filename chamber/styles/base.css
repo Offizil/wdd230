@@ -106,7 +106,7 @@ nav a {
   grid-area: 1/1/6/7;
 }
 
-#cta_button {
+.cta_button {
   z-index: 2;
   grid-area: 5/1/6/3;
   font-size: 22px;
@@ -363,7 +363,7 @@ nav a:hover, nav a:active {
   grid-area: 1/1/4/4;
 }
 
-#cta_button {
+.cta_button {
   z-index: 3;
   grid-area: 3/1/4/2;
   background-image: linear-gradient( var(--accent1-color), white, var(--paragraph-color-on-white) )  ;
@@ -380,11 +380,7 @@ nav a:hover, nav a:active {
   text-align: left;
 }
 
-#hero_h4 {
-  /* font-size: 32px; */
-  
-}
- 
+
 
 #hero_text h2, 
 #hero_text p {
