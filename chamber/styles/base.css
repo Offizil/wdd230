@@ -128,17 +128,21 @@ nav a {
   margin: 10px;
   z-index: 3;
   text-align: left;
+  text-shadow: 0px 0px 30px black;
+
+  
 }
 
 #hero_h4 {
   font-size: 40px;
-  box-shadow: #000;
+  /* box-shadow: #000; */
   
 }
 
 #hero_text p {
   font-size: 32px;
-  box-shadow: #000210;
+  text-shadow: 0px 0px 60px black;
+
 }
 
 
@@ -894,6 +898,42 @@ border-bottom: solid 4px #8b4747 ;
 .listview section:last-child {
   margin-bottom: 3rem;
 }
+
+.spotGrid {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  align-items: center;
+  justify-items: center;
+  }
+
+.spotGrid section {
+  /* border: .2px solid var(--nav-background-color); */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  /* align-items: center; */
+  border-radius: 6px;
+  padding: 20px;
+  background-color: rgb(231, 231, 201);
+  margin: 10px;
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.spotGrid h2, p, a{
+  text-align: center;
+}
+
+.spotGrid a {
+  text-decoration: none;
+  color: var(--accent1-color);
+}
+.spotGrid section:nth-child(even){
+  background-color: rgba(245, 245, 219, 0.638);
+}
+
+
 
 .newsStyle {
   padding: 10px;

@@ -4,9 +4,9 @@ const spotCard = document.querySelector("#spotlights_adverts");
 const newsCard = document.querySelector("#newssection");
 
 // Add the 'gridview' class to set the grid as the default view on page load
-spotCard.classList.add('listview');
+// spotCard.classList.add('listview');
+spotCard.classList.add("spotGrid");
 newsCard.classList.add("newsStyle");
-
 
 
 // news card
@@ -16,7 +16,7 @@ const newheader = document.createElement("p");
 newheader.innerHTML = `📰 Local News Releases`;
 
 const newsPara = document.createElement("p");
-newsPara.innerHTML = `<p><b>Calabar, CRS</b> - The Calabar Chamber of Commerce proudly announced the winners of the state qualifying round of the Nigeria National Hackathon, a social coding event that brings computer programmers and other interested people together to improve upon or build a new software program. Twenty secondary school student finalists from Hope Wadddel Training Institute, Federal Goverment Girls college, St. Patrick's College and other private schools participated in this competition.</p>`
+newsPara.innerHTML = `<p><b>Calabar, CRS</b> - The Calabar Chamber of Commerce proudly announced the winners of the state qualifying round of the Nigeria National hackathon, a social coding event that brings computer programmers and other interested people together to improve upon or build a new software program. Twenty secondary school student finalists from Hope Wadddel Training Institute, Federal Goverment Girls college, St. Patrick's College and other private schools participated in this competition.</p>`
 
 news.appendChild(newheader);
 news.appendChild(newsPara);
