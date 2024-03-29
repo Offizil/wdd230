@@ -35,7 +35,7 @@ async function callFetch(apiURL) {
 
 
 
-document.querySelector("#submitBttn").addEventListener("click", Windchill);
+document.addEventListener("DOMContentLoaded", Windchill);
 
 function Windchill(temp, speed, weatherrdata) {
    

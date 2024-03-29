@@ -366,8 +366,7 @@ nav a:hover, nav a:active {
 .cta_button {
   z-index: 3;
   grid-area: 3/1/4/2;
-  background-image: linear-gradient( var(--accent1-color), white, var(--paragraph-color-on-white) )  ;
-  ;
+  background-image: linear-gradient( var(--accent1-color), white, var(--paragraph-color-on-white) );
   height: 40px;
 }
 
