@@ -3,9 +3,8 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 const apiKey = "e8a706196182a36f8689bfcb03e2425f";
 const city = "calabar";
-
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
-// const url = 
+ 
 
 async function apiFetch(apiUrl) {
     try {
@@ -14,22 +13,19 @@ async function apiFetch(apiUrl) {
             const data = await response.json();
             console.log(data);
             return data;
-
         }
         else {
             throw Error(await response.text());
-
         }
-
     } catch (error) {
         console.log(error);
-
     }
 }
-// apiFetch();
 
-function displayResults(currentTemp, weatherIcon, captionDesc, data) {
+function displayResults(data) {
+    
     currentTemp.innerHTML = `<strong>${data.main.temp.toFixed(0)}</strong> &deg;F`;
+    
     const desc = data.weather[0].description.capitalize();
     
     captionDesc.textContent = desc;
@@ -45,11 +41,22 @@ document.addEventListener("DOMContentLoaded", ()=> {
   .catch((error) => console.error("Error fetching data:", error));
 });
 
-// document.addEventListener("DOMContentLoaded", async () => {
-//     try {
-//         const data = await apiFetch(apiUrl); // Await the API fetch
-//         displayResults(data);
-//     } catch (error) {
-//         console.error("Error fetching data:", error);
-//     }
-// });
+
+/**
+ * Returns the same capitalized string
+ * @returns Capitalized String
+ */
+String.prototype.capitalize = function() {
+    // split the string by spaces
+    let arr = this.split(" ");
+    // capitalized array
+    let capArr = [];
+    // loop through every word
+    arr.forEach(word => {
+      // capitalize word
+      capArr.push(`${word.slice(0, 1).toUpperCase()}${word.slice(1)}`);
+    });
+    // join array and return
+    return capArr.join(" ");
+  }
+  

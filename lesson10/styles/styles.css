@@ -1,0 +1,17 @@
+header, footer{
+    background-color: #102a10;
+    color: beige;
+    padding: 40px;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+    border: 3px solid #102a10;
+    
+    border-radius: 6px;
+    background-color: beige;
+    max-width: 600px;
+    width: 100%;
+    margin: 10% auto
+}
