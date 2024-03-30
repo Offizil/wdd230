@@ -963,6 +963,20 @@ border-bottom: solid 4px #8b4747 ;
   padding-top: 10px;
 }
 
+@media screen and (max-width: 620px){
+  .directory-grid{
+    display: block;
+  }
+
+
+  .listview section{
+    width: 100%;
+    max-width: fit-content;
+  }
+}
+
+
+
 
 
 

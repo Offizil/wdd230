@@ -62,5 +62,6 @@
 
 
 const hiddenfield = document.querySelector("#getdate");
-
+document.addEventListener("DOMContentLoaded", ()=> {
 hiddenfield.innerHTML = `${formattedDate} at ${formattedTime}`;
+});
