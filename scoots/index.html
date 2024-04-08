@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots home Page</title>
+    <meta name="description" content="This is the home page for the scoots motor and rentals company, the final website design project for web front end development WDD230. This fulfils requirement for a certificate in Web and Computer Programming(C129) at BYU-Idaho ">
+    <meta name="author" content="Edem Offiong">
+    <link rel="icon" href="images/favicon(3).ico">
+
+    <meta property="og:title" content="Edem Offiong - Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Offizil.github.io/wdd230/scoots">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnigeriapropertycentre.com%2Farea-guides%2Fcross-river%2Fcalabar&psig=AOvVaw3VtajwXc2czP2-iW5hanq1&ust=1705882713256000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCODXp7-a7YMDFQAAAAAdAAAAABAD"> 
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/scoots-logo2.png" height="65" width="90" alt="scoots company logo desc"></a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Rentals.html">Rentals</a>
+            <a href="Reservations.html">Reservations</a>
+            <a href="contactus.html">Contact us</a>
+        </nav>
+
+        <div id="header-socials">
+            <a href="www.instagram.com"><img src="images/instagram-logo.png" alt="insta logo desc"> </a>
+            <a><img src="images/facebook-logo.png"  alt="fb logo desc"> </a>
+            <a><img src="images/whatsapp-logo.png" alt="whatsapp logo desc"> </a>
+            <a><img src="images/linkedin-logo.png" alt="inkedin logo desc"> </a>
+        </div>
+    </header>
+    <main>
+        <section id="hero-sect">
+            
+            <!-- <picture>
+                <source media="(max-width:620px)" srcset="images/banner.webp">
+                <source media="(max-width:960px)" srcset="images/banner.webp">
+
+                <img src="images/banner.webp" alt="An image showing a goofy graphic of a scooter bike and styled text" width="1440" height="1000">
+            </picture> -->
+            <div id="hero-text">
+            <h1 >WE ARE THE BEST<br>MOTOR SCOOTER RENTAL<br>COMPANY</h1>
+            <button id="cta-button">VIEW OUR RENTAL OPTIONS</button>
+            </div>
+
+        </section>
+
+        <section id="about-us-sect">
+            <div id="bar-group">
+                <div id="hr-bar"></div>
+                <h5 id="about-us-h5">ABOUT US</h5>
+            </div>
+
+            <h3>LEARN MORE ABOUT SCOOTS RESORTS AND RENTALS</h3>
+            <p>Scoots is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships. </p><br>
+            <button>LEARN MORE</button>
+        </section>
+
+        <section id="rental-summary">
+            <div id="bar-group">
+                <div id="hr-bar"></div>
+                <h5 id="about-us-h5">Available Rental Types</h5>
+            </div>
+
+            <h3>Honda Motor Scooters</h3>
+
+            <div id="honda-scooters">
+                <figure>
+                    <img src="images/honda metro2.jpg" alt="honda metro 2">
+                    <figcaption>Honda Metro (49cc)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Honda PCX150.jpg" alt="honda pcx 150 scooter">
+                    <figcaption>Honda PCX150 (149cc)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Honda-DIO.jpg" alt="honda dio">
+                    <figcaption>Honda Dio (110cc)</figcaption>
+                </figure>
+            </div>
+
+            <h3>Side-by-Side ATVs</h3>
+            <div id="atv-scooters">
+                <figure>
+                    <img src="images/HondaPioneer1000(2).jpg" alt="honda pioneer image" width="157" height="134">
+                    <figcaption>Honda Pioneer 1000</figcaption>
+                </figure>
+
+                    <div width="157" height="134"></div> </div>
+
+
+                    <div width="157" height="134"></div> </div>
+
+            </div>
+
+            <h3>Jeeps</h3>
+            <div id="jeep-scooters">
+                <figure>
+                    <img src="images/rsz_1jeepwrangler4doormanue.jpg" alt="jeep wrangler 4 door">
+                    <figcaption>Jeep Wrangler - 4 door manual</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/JeepWrangler-2door.png" alt="Jeep Wrangler - 2 door " width="157" height="134">
+                    <figcaption>Jeep Wrangler - 2 door </figcaption>
+                </figure>
+                <figure>
+                    <div width="157" height="134"></div></div>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+
+
+         <!--WEATHER SECTION-->
+        <section id="weather_section">
+            <div class="forecast">
+                <h3>Calabar Weather Today</h3>
+
+                <div class="day-forecast"  id="today">
+
+                    <h4>Today</h4>
+                    <p>Weather Overview: <span id="tempTitle"></span></p>
+                    <p>Humidity: <span id="humdidity"></span>%</p>
+                    <p>Temp: <span id="tempValue"></span> &deg;F</p><br>
+                    <figure>
+                        <img src="http://placekitten.com/200/300" alt="" id="weather-icon" >
+                        <figcaption id="weather-figcaption"></figcaption>
+                    </figure>
+
+                </div>
+                
+                <div class="day-forecast" id="tomorow">
+                    <h4>The Weather @3pm Tomorrow</h4><br>
+                    <p>Temp: <b><span id="forecastTempValue"></span></b> &deg;F</p><br>
+                    <p id="courtesy">Courtesy of: OpenWeatherMap.org</p><hr>
+
+                </div>
+            </div>
+
+            <!-- Banner section -->
+            <section class="eventbanner" id="eventbanner">
+                <h2>Today's forecasted maximum temperature is <span id="max-temp-span"></span> &deg;F</h2>
+                <button class="close-btn" onclick="closeBanner()">Close</button>
+            </section>
+
+            <section id="developer">
+                <div id="bar-group">
+                    <div id="hr-bar"></div>
+                    <h5 id="about-us-h5">Meet Our Team</h5>
+                </div>
+
+                <h3>OUR PROFESSIONAL TEAM</h3>
+                <div id="developer-bio">
+                    <figure>
+                        <img src="images/placeholder.png" alt="picture of edem">
+                        <figcaption><strong>EDEM OFFIONG</strong><br>Product Designer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/placeholder.png" alt="another picture of edem">
+                        <figcaption><strong>OFFIONG EDEM</strong><br>Frontend Developer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/placeholder.png" alt="image of the llegendary john doe">
+                        <figcaption><strong>JOHN DOE</strong><br>Backend Developer</figcaption>
+                        
+                    </figure>
+                </div>
+            </section>
+
+            <section id="testimonial-sect">
+                <div id="bar-group">
+                    <div id="hr-bar"></div>
+                    <h5 id="about-us-h5">TESTIMONIALS</h5>
+                </div>
+                <h3>WHAT OUR CLIENTS ARE SAYING</h3>
+
+                <div id="testimonies">
+
+                    <div class="testimony">
+                        <p><b>Simply Excellent!</b><br>The rentals reservation and resort services offered by scoots is just simply top notch. i Can't wait for my next vacation to visit the island once again. I strongly recommend you give it a try.</p>
+                        <div id="bar-group">
+                            <div id="hr-bar"></div>
+                            <h5 id="about-us-h5">Agboola Olasunkanmi</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="testimony">
+                        <p><b>Simply Excellent!</b><br>The rentals reservation and resort services offered by scoots is just simply top notch. i Can't wait for my next vacation to visit the island once again. I strongly recommend you give it a try.</p>
+                        <div id="bar-group">
+                            <div id="hr-bar"></div>
+                            <h5 id="about-us-h5">Jamiu Halimat</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="testimony">
+                        <p><b>Simply Excellent!</b><br>The rentals reservation and resort services offered by scoots is just simply top notch. i Can't wait for my next vacation to visit the island once again. I strongly recommend you give it a try.</p>
+                        <div id="bar-group">
+                            <div id="hr-bar"></div>
+                            <h5 id="about-us-h5">Alao Kayode</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+    </main>
+    <footer>
+        <div id="footer-sect-1">
+            <figure>
+                <img src="images/scoots-logo.png" height="65" width="90" alt="scooter logo in png format">
+                <figcaption>Delivering quality motor scooter rentals like no other.</figcaption>
+            </figure>
+            
+            <div id="subfooter-1">
+                <p>Home</p>
+                <p>Contact Us</p>
+                <p>Reservation</p>
+                <p>Rentals</p>
+            </div>
+        </div>
+
+        <div id="footer-sect-2"><br>
+            
+            
+                <p>Frequently asked Questions</p>
+                <p>About Us</p>
+                <p>Join Us</p>
+                <p>Profile</p>
+                <p>Sign up for our Newsletter</p><br><br>
+                      
+            <p>#54 Ndidem Usang Iso Road Calabar, CRS, Nigeria</p>
+            <p>+234 810 419 5290</p>
+            <p><a>scooter@fredoffizil.industries.com</a></p><br>
+            <p><b>&copy; Edem offiong 2024 | WDD230 | BYU-Idaho 2024</b></p>
+        </div>
+    </footer>
+    <script src="scripts/weatherscript.js"></script>
+</body>
+</html>

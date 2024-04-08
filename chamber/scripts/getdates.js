@@ -18,11 +18,12 @@
 
 
 
-  let welcomePara = document.querySelector("#welcome-card");
+ 
 
   const msToDays = 8460000;
 
   document.addEventListener("DOMContentLoaded", function () {
+    const welcomePara = document.querySelector("#welcome-card");
     // Check if localStorage is supported by the browser
     if (typeof(Storage) !== "undefined") {
         // Get the current date and time
@@ -61,7 +62,7 @@
 
 
 
-const hiddenfield = document.querySelector("#getdate");
 document.addEventListener("DOMContentLoaded", ()=> {
+const hiddenfield = document.querySelector("#getdate");
 hiddenfield.innerHTML = `${formattedDate} at ${formattedTime}`;
 });
