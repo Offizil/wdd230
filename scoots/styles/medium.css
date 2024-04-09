@@ -127,6 +127,19 @@ nav a:hover{
     font-size: medium;
 }
 
+#menutext {
+    display: none;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
 
 /* -----------------------------
 Homepage styles
@@ -207,12 +220,12 @@ Hero styles
 }
 
 
-#bar-group{
+.bar-group{
     display: flex;
     align-items: center;
 }
 
-#hr-bar{
+.hr-bar{
     
     width: 40px; 
     height: 3px; 
@@ -221,7 +234,7 @@ Hero styles
 }
 
 
-#about-us-h5 {
+.about-us-h5 {
     letter-spacing: 4px;
 }
 
@@ -242,7 +255,8 @@ Hero styles
     margin-left: 40px;
 }
 
-#rental-summary h3{
+#rental-summary h3,
+#rental-summary2 h3{
     text-align: left;
     margin-left: 40px;
 }
@@ -253,14 +267,16 @@ Hero styles
     padding: 20px 0px;
 }
 
-#rental-summary figure{
+#rental-summary figure,
+#rental-summary2  figure{
     text-align: center;
     font-size: larger;
     font-weight: bold;
 
 }
 
-#rental-summary img {
+#rental-summary img,
+#rental-summary2  img {
     width: 300px;
     height: 260px;
     box-shadow: 2px 2px 10px  peachpuff;
@@ -455,10 +471,216 @@ CONTACT US PAGE style
 
 }
 
-/* .google-map{
-    margin: 10px;
-} */
 #contatcus-main {
 
     margin: 20%;
+}
+
+
+/* ----------------------
+RESERVATION PAGE style
+-------------------- */
+
+#agree-sect{
+    /* margin-top: 40px; */
+    padding: 20px;
+    text-decoration: none;
+    line-height: 40px;
+    grid-column: 2/3;
+    margin: 10px 40px 40px 0px;
+}
+
+
+#reservations-main {
+    /* margin: 40px; */
+    /* background-color: white; */
+    width: 100%;
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+}
+
+#regform-sect {
+    grid-column: 1/2;
+    padding: 10px;
+
+}
+
+
+#regform-sect h3 {
+    margin-left: 40px;
+}
+#reservations-main section {
+    border-radius: 6px;
+    background-color: beige;
+
+}
+
+#reserve-form {
+    
+    padding: 40px;
+    margin-bottom: 40px;
+} 
+
+#reserve-form legend{
+    font-weight: bolder;
+    color: brown;
+    margin-left: 40px;
+}
+
+#reserve-form fieldset{
+    margin-top: 20px;
+    border: .11px solid grey;
+    max-width: 90%;
+    /* width: 100%; */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+#reserve-form span{
+    color: rgb(213, 58, 58);
+}
+
+#reserve-form label,
+#reserve-form input[type="text"],
+#reserve-form input[type="email"],
+#reserve-form input[type="tel"],
+#reserve-form input[type="date"],
+#reserve-form input[type="text"],
+#reserve-form select,
+#reserve-form textarea{
+    display: block;
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+#reserve-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(gold, rgba(145, 129, 37, 0.756));
+    padding: .8rem;
+    width: 96%;
+    color: brown;
+    font-weight: bolder;
+    max-width: 400px;
+    border-radius: 6px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px black;
+}
+
+
+/* ---------------
+Thank you page styles 
+------------------ */
+.welcome-message {
+    margin: 20%;
+  
+  }
+  
+  .welcome-message h1 {
+    color:brown;
+  
+  }
+   
+  .welcome-message a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 900;
+    text-shadow: 1px 1px 4px black;
+  }
+  
+/*---------------------------
+  TABLE STYLE ON rENTAL pAGE
+-------------------------------- */
+
+
+
+
+table,
+th {
+    border: 1px solid #d8caca;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 0;
+    /* width: 100%; */
+}
+
+table {
+    width: 65%;
+    margin: 0 auto;
+    caption-side: top;
+}
+
+
+#sacrificial-row{
+    display: none;
+}
+
+tr:nth-child(odd) {
+    background-color: beige;
+    /* color: blue; */
+}
+
+tr:nth-child(even) {
+    background-color: rgb(217, 207, 207);
+}
+
+
+/* th {
+    background-color: black;
+    color: white;
+}  */
+
+
+
+#caption-row {
+    margin-top: 10px;
+     caption-side: bottom;
+     font-weight: bold;
+     background-color: black;
+     color: white;
+     height: 60px;
+     }
+
+th{
+    height: 60px;
+    font-size: 1.2em;
+    
+}
+    
+
+td {
+    height: 60px;
+    width: 60px;
+    border: 1px solid wheat;
+    /* color: red; */
+    text-align: center;
+}
+
+/* -----------------------------
+RENTAL PAGE STYLES
+----------------------------- */
+
+#rental-summary2 
+{
+    background-color: white;
+    /* background-color: beige; */
+    margin: 40px 0px;
+    padding: 20px 0px;
+}
+
+#rental-cta-button{
+    color: black;
+    background-color: gold;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: larger;
+    font-weight: bold;
+    margin: 1.6em 35%;    /* text-align: center; */
 }
