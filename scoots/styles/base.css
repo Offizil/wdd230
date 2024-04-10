@@ -1,0 +1,780 @@
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  }
+  
+/* --------------------------------------------
+FOOTER CSS
+----------------------------------------------- */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: beige;
+    color: black;
+    font-size: large;
+    width: 100%;
+}
+
+#footer-sect-1{
+    grid-column: 1/2 ;
+}
+
+
+#footer-sect-2{
+    grid-column: 2/3;
+    text-align: left;
+}
+
+#subfooter-1{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#footer-sect-1 figure{
+    padding-bottom: 100px;
+    margin-bottom: 10%;
+    /* background-color: red; */
+}
+footer figcaption {
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0px 20px;
+}
+
+/* -------------------------------
+banner styles
+------------------------------- */
+.eventbanner {
+  display: none;
+  background-color: goldenrod;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.eventbanner button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------
+HEADER STYLES
+------------------------------------------ */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0);  */     /* Initial transparent background */
+    background-color: rgba(245, 245, 220, 0.275);
+    text-shadow: 4px 4px 4px black;
+    transition: background-color 0.3s ease; 
+
+
+
+
+    /* background-color: black; testingggggggg */
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+header.scrolled {
+    background-color: black; /* Background 
+    color on scroll */
+    color: white;
+    
+}
+
+header.scrolled a {
+    color: white;
+    text-shadow: none;
+}
+
+
+
+nav a,
+header a  {
+    text-decoration: none;
+    color: gold;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    font-size: x-large;
+}
+
+#header-socials{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+       
+}
+
+#header-socials img{
+    width: 25px;
+    height: 25px;
+}
+
+nav a:hover{
+    color: gold;
+    padding: 5px;
+    background-color: brown;
+    font-size: medium;
+}
+
+#menutext {
+    display: none;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+
+/* -----------------------------
+Homepage styles
+------------------------------- */
+
+
+
+/* ----------------
+Hero styles
+------------------- */
+
+#homepage-main{
+    margin: 20px ;
+}
+
+#hero-sect {
+    width: 100%;
+    height: 1000px;
+    text-align: left;
+    background-image: url("banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+#hero-sect button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+#hero-text{
+    border: #333;
+    text-align: left;
+    padding-left: 8%;
+    padding-top: 30%;
+    color: beige;
+    text-shadow: 5px 5px 14px black;
+}
+
+#hero-text h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: gold;
+}
+    
+
+#cta-button {
+   color: black;
+   background-color: gold;
+   padding: 20px;
+   border: none;
+   border-radius: 6px;
+   font-size: larger;
+   font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US SECT */
+
+#about-us-sect{
+    padding: 60px 20px;
+    background-color: beige;
+    margin: 20px 0px;
+}
+
+
+.bar-group{
+    display: flex;
+    align-items: center;
+}
+
+.hr-bar{
+    
+    width: 40px; 
+    height: 3px; 
+    background-color: gold;
+    margin-right: 5px; 
+}
+
+
+.about-us-h5 {
+    letter-spacing: 4px;
+}
+
+#about-us-sect  button{
+    background-color: gold;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#honda-scooters,
+#jeep-scooters,
+#atv-scooters{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+#rental-summary h3,
+#rental-summary2 h3{
+    text-align: left;
+    margin-left: 40px;
+}
+
+#rental-summary{
+    background-color: beige;
+    margin: 40px 0px;
+    padding: 20px 0px;
+}
+
+#rental-summary figure,
+#rental-summary2  figure{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+#rental-summary img,
+#rental-summary2  img {
+    width: 300px;
+    height: 260px;
+    box-shadow: 2px 2px 10px  peachpuff;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+.forecast{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: white;
+    font-size: larger;
+}
+
+.forecast h3{
+    text-align: left;
+    margin-left: 40px;
+}
+
+
+#today {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+#tomorow{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+
+}
+#scoots-gallery {
+    margin:20px;
+    background-color: beige;
+}
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    margin: 40px;
+    
+}
+#gallery img {
+    /* width: 479px;
+    height: 600px; */
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px  peachpuff;
+
+}
+
+#scoots-gallery h3{
+    margin-left: 40px;
+}
+
+
+#developer{
+    background-color: beige;
+    margin: 20px 0px
+
+}
+
+#developer h3{
+    text-align: left;
+    margin-left: 40px;
+}
+
+#developer-bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+#developer-bio figure{
+    text-align: center;
+    padding: 40px;
+}
+
+#developer-bio img {
+    width: 300px;
+    height: 250px;
+    border-radius: 6px;
+
+}
+
+#courtesy{
+    color: gold;
+    background-color: black;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+/* ------------------------
+testimonial-sect design
+------------------- */
+#testimonial-sect{
+    background-color: beige;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding: 10px 20px 30px 20px;
+}
+
+#testimonial-sect H3{
+    margin-left: 40px;
+}
+
+#testimonies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    color: black;
+}
+
+.testimony{
+    border: 1px solid white;
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    border-radius: 6px;
+    line-height: 1.8em;
+}
+
+
+
+
+
+
+/* ----------------------
+CONTACT US PAGE style
+-------------------- */
+#contactus-banner {
+    background-image: url(back-bg-5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 70%;
+    height: 600px;
+    margin-top: 100px;
+
+}
+
+#contactus-banner h3 {
+    font-size: 70px;
+    margin: 40px ;
+    margin-top: 150px;
+    color: gold;
+    text-shadow: 5px 5px 20px black;
+}
+
+#contactus-banner h5{
+    font-size: 40px;
+    margin: 40px ;
+    margin-top: -40px;
+    color: rgb(52, 51, 51);
+    /* text-shadow: 5px 5px 20px black;    */
+}
+
+#contact-info1{
+    /* border: 1px solid black; */
+    background-color: beige;
+    border-radius: 6px;
+    padding: 40px;
+    width: 50%;
+
+}
+
+#contactus-form {
+    width: 50%;
+    margin: 40px 1px 40px 1px;
+    padding: 40px;
+    background-color: beige;
+    border-radius: 6px;
+}
+
+#contactus-form legend{
+    font-weight: bold;
+}
+
+#contactus-form label {
+    display: block;
+    margin: 20px;
+}
+
+#contactus-form input{
+    text-align: left;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+}
+
+#contactus-form span{
+    color: red;
+}
+
+#contactus-form textarea {
+    display: block;
+
+}
+
+#contatcus-main {
+
+    margin: 20%;
+    margin-top: 200px;
+}
+
+#contactus-button {
+    color: beige;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px gold;
+    height: 40px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 6px;
+    /* width: 100px; */
+}
+
+.google-map {
+    width: 750px;
+    height: 480px;
+}
+
+
+/* ----------------------
+RESERVATION PAGE style
+-------------------- */
+
+
+
+
+#reservations-main {
+    width: 100%;
+    /* height: 2000px; */
+    margin: 20px 20px;
+    /* display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto; */
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 200px;
+
+}
+
+#regform-sect {
+    /* grid-column: 1/2; */
+    padding: 10px;
+
+}
+
+#agree-sect{
+    /* margin-top: 40px; */
+    /* grid-column: 2/3; */
+    padding: 20px;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 10px 40px 40px 0px;
+}
+
+
+#regform-sect h3 {
+    margin-left: 40px;
+}
+#reservations-main section {
+    border-radius: 6px;
+    background-color: beige;
+
+}
+
+#reserve-form {
+    
+    padding: 40px;
+    margin-bottom: 40px;
+} 
+
+#reserve-form legend{
+    font-weight: bolder;
+    color: brown;
+    margin-left: 40px;
+}
+
+#reserve-form fieldset{
+    margin-top: 20px;
+    border: .11px solid grey;
+    max-width: 90%;
+    /* width: 100%; */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+#reserve-form span{
+    color: rgb(213, 58, 58);
+}
+
+#reserve-form label,
+#reserve-form input[type="text"],
+#reserve-form input[type="email"],
+#reserve-form input[type="tel"],
+#reserve-form input[type="date"],
+#reserve-form input[type="text"],
+#reserve-form select,
+#reserve-form textarea{
+    display: block;
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+#reserve-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(gold, rgba(145, 129, 37, 0.756));
+    padding: .8rem;
+    width: 96%;
+    color: brown;
+    font-weight: bolder;
+    max-width: 400px;
+    border-radius: 6px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px black;
+}
+
+
+/* ---------------
+Thank you page styles 
+------------------ */
+.welcome-message {
+    margin: 20%;
+  
+  }
+  
+  .welcome-message h1 {
+    color:brown;
+  
+  }
+   
+  .welcome-message a {
+    text-decoration: none;
+    color: gold;
+    font-weight: 900;
+    text-shadow: 1px 1px 4px black;
+  }
+  
+/*---------------------------
+  TABLE STYLE ON rENTAL pAGE
+-------------------------------- */
+
+
+
+
+table,
+th {
+    border: 1px solid #d8caca;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 0;
+    /* width: 100%; */
+}
+
+table {
+    width: 65%;
+    margin: 0 auto;
+    caption-side: top;
+}
+
+
+#sacrificial-row{
+    display: none;
+}
+
+tr:nth-child(odd) {
+    background-color: beige;
+    /* color: blue; */
+}
+
+tr:nth-child(even) {
+    background-color: rgb(217, 207, 207);
+}
+
+
+/* th {
+    background-color: black;
+    color: white;
+}  */
+
+
+
+#caption-row {
+    margin-top: 10px;
+     caption-side: bottom;
+     font-weight: bold;
+     background-color: black;
+     color: white;
+     height: 60px;
+     }
+
+th{
+    height: 60px;
+    font-size: 1.2em;
+    
+}
+    
+
+td {
+    height: 60px;
+    width: 60px;
+    border: 1px solid wheat;
+    /* color: red; */
+    text-align: center;
+}
+
+/* -----------------------------
+RENTAL PAGE STYLES
+----------------------------- */
+#rental-main {
+    margin-top: 200px;
+}
+
+
+#rental-summary2 
+{
+    background-color: white;
+    /* background-color: beige; */
+    margin: 40px 0px;
+    padding: 20px 0px;
+}
+
+#rental-cta-button{
+    color: black;
+    background-color: gold;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: larger;
+    font-weight: bold;
+    margin: 1.6em 35%;    /* text-align: center; */
+}
