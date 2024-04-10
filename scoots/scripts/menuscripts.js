@@ -20,3 +20,17 @@ The CSS class rules will handle the different views, layouts, and displays.
 
 
 
+window.addEventListener('scroll', function() {
+	var header = document.getElementById('header');
+	var scrollThreshold = 150; // Adjust this value as needed
+	
+	if (window.scrollY > scrollThreshold) {
+	  header.classList.add('scrolled');
+	} else {
+	  header.classList.remove('scrolled');
+	}
+  });
+  
+
+
+

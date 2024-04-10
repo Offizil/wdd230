@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div>
             <a href="index.html"><img src="images/scoots-logo2.png" height="65" width="90" alt="scoots company logo desc"></a>
         </div>
+        <a id="menu" ><span id="menutext">menu</span></a>
 
         <nav>
             <a href="index.html">Home</a>
@@ -41,6 +42,26 @@
     </header>
     <main id="reservations-main">
         
+        
+        <section id="agree-sect">
+            <div class="bar-group">
+                <div class="hr-bar"></div>
+                <h5 class="about-us-h5">Our Rental Terms</h5>
+            </div>
+            <h3>Rental Services and Agreements</h3>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
         <section id="regform-sect">
             
             <div class="bar-group">
@@ -292,7 +313,7 @@
                 <legend>Rental details</legend>
                 <label>Type of Rental<span>* </span><input type="text" required name="rental"></label>
                 <label>Number <input type="text" required name="rental"></label>
-                <label>Period(season) <input type="text" required name="rental"></label>
+                <label>Period(season) <input type="text" name="rental"></label>
                 <label>Date<span>* </span><input type="date" required name="rental"></label>
                 <label>Special Request/Comment(if necessary)
                     <textarea id="comment" name="comment" rows="6" cols="60" placeholder="Enter your comment here... "></textarea>
@@ -301,25 +322,6 @@
             </fieldset>
             <input type="submit" value="Book Reservation">
             </form>
-        </section>
-        <section id="agree-sect">
-            <div class="bar-group">
-                <div class="hr-bar"></div>
-                <h5 class="about-us-h5">Our Rental Terms</h5>
-            </div>
-            <h3>Rental Services and Agreements</h3>
-            <ul>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid drivers license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                <li>Rentals may be returned to either physical location.</li>
-            </ul>
         </section>
          
     </main>
@@ -354,5 +356,6 @@
         </div>
     </footer>
     <script src="scripts/weatherscript.js"></script>
+    <script src="scripts/menuscripts.js"></script>
 </body>
 </html>

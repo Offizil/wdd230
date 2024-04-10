@@ -1,0 +1,298 @@
+
+@media screen and (max-width: 620px) {
+
+/* -------------------------------
+HEADER STYLES 
+_______________________________________ */
+nav {
+display: none;
+}
+
+header {
+display: block;
+background-color: rgba(18, 113, 96, 0.627);
+}
+    
+      
+#content{
+    display: block;
+  }
+
+
+
+  .show a {
+    display: block;
+}
+
+#menu.show::before {
+    content: "≡";
+}
+
+
+
+  #header-socials img {
+    display: none;
+  }
+
+ nav a {
+    display: none;
+ }
+.navigation a {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0.75rem; */
+    text-align: center;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    font-weight: 400;
+    transition: 0.5s;
+    /* font-size: clamp(1rem, 2vmin, 1.5rem); */
+}
+
+nav a:hover, 
+nav a:active {
+    color: white;
+    background-color: black;
+}
+
+nav.show{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(245, 245, 220, 0.304);
+    width: 100%;
+
+
+}
+
+
+
+#menu {
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+    font-weight:700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    /* background-color: #eeeeee19; */
+    color: gold;
+}
+
+
+#menu::before {
+    content: "≡";
+}
+
+main {
+    display: block;
+}
+
+/* -------------------------------
+HOMEPAGE 
+_______________________________________ */
+
+#homepage-main{
+    margin: 20px ;
+}
+#honda-scooters,
+#jeep-scooters,
+#atv-scooters{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+
+
+
+.forecast {
+    display: block;
+    gap: 0px;
+    /* text-align: center; */
+}
+
+#today,
+#tomorow{
+  display: flex ;
+  flex-direction: column;
+  /* gap: 40px; */
+  margin: 0 auto;
+}
+
+/* #tomorow{
+    display: block;
+} */
+
+.day-forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin: 0 auto;
+}
+
+#developer-bio {
+    display: block;
+}
+
+#testimonies{
+    display: block;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.testimony {
+    margin-bottom: 10px;
+    border: 1px solid rgba(163, 98, 98, 0.259);
+
+   
+
+}
+
+/* -------------------------------
+FOOTER
+_______________________________________ */
+ 
+footer {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20px; */
+
+}
+
+#footer-sect-2{
+    margin-left: 40px;
+}
+
+
+
+
+/* -------------------------------
+RENTAL PAGE 
+_______________________________________ */
+
+#rental-cta-button{
+    width: 300px;
+}
+
+
+/* -------------------------------
+RESERVATION PAGE
+_______________________________________ */
+#reservations-main{
+    display: block;
+    margin-top: 200px;
+}
+
+
+/* -------------------------------
+CONTACT-US
+_______________________________________ */
+#contatcus-main {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    margin-top: 200px;
+}
+#contact-info1{
+    display: block;
+    width: 70%;
+    max-width: 80%;
+
+}
+
+#contactus-banner{
+    display: block;
+    /* width: ; */
+}
+
+
+/* --------------contact us form */
+
+
+
+#contactus-form {
+    width: 80%;
+    margin: 50px 1px 60px 1px;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 6px;
+}
+
+#contactus-form fieldset {
+    width: 80%;
+    border-radius: 6px;
+    border: solid .5px grey;
+}
+
+#contactus-form legend{
+    font-weight: bold;
+
+}
+
+#contactus-form label {
+    display: block;
+    margin: 20px;
+}
+
+#contactus-form input{
+    text-align: left;
+    border-radius: 6px;
+    width: 70%;
+    height: 30px;
+}
+
+#contactus-form span{
+    color: red;
+}
+
+#contactus-form textarea {
+    display: block;
+    width: 100%;
+
+}
+
+#contatcus-main {
+
+    margin: 20%;
+    margin-top: 200px;
+}
+
+#google-map {
+    width: 70%;
+    height: 480px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
