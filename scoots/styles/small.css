@@ -117,6 +117,8 @@ _______________________________________ */
   flex-direction: column;
   /* gap: 40px; */
   margin: 0 auto;
+  margin-bottom: 20px;
+
 }
 
 /* #tomorow{

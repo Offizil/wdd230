@@ -350,6 +350,7 @@ Hero styles
     padding: 20px;
     border-radius: 6px;
     margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 #tomorow{
@@ -362,8 +363,34 @@ Hero styles
     padding: 20px;
     border-radius: 6px;
     margin-right: 40px;
+    margin-bottom: 20px;
+
+}
+#scoots-gallery {
+    margin:20px;
+    background-color: beige;
+}
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    margin: 40px;
+    
+}
+#gallery img {
+    /* width: 479px;
+    height: 600px; */
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px  peachpuff;
+
 }
 
+#scoots-gallery h3{
+    margin-left: 40px;
+}
 #developer{
     background-color: beige;
     margin: 20px 0px
