@@ -5,7 +5,7 @@ const table = document.querySelector("#table");
 async function getVehicleData() {
   const response = await fetch(url);
   const data = await response.json();
-  console.table(data.vehicles);
+  // console.table(data.vehicles);
   displayVehicles(data.vehicles);
 }
 

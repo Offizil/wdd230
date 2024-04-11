@@ -79,7 +79,7 @@ function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
 }
 
 function processForecastData(forecastData) {
- console.log(forecastData.list)
+//  console.log(forecastData.list)
   // // Check if forecastData is an array and has at least one element
   if (!Array.isArray(forecastData.list) || forecastData.list.length === 0) {
     console.error('Invalid forecast data ooh');
